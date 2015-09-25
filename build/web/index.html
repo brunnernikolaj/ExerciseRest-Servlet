@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>       
+        <script src="js/jquery/jquery.js" type="text/javascript"></script>
+        <script src="js/angular.js/angular.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script> 
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.js"></script>
+    </head>
+    <body ng-app="myApp" ng-controller="QuoteController">
+        <div class="ui two column centered grid">
+            <div class="ui form column" style=" text-align: center;">
+                <h1 >Quote of today</h1>
+                <div>{{randomQuote}}</div>
+                <div style="margin-top: 20px" class="ui button" ng-click="newQuote()">New</div>
+            </div>
+        </div>
+    </body>
+</html>
